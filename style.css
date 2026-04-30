@@ -106,7 +106,7 @@ header {
 }
 @media (max-width:768px){
     .my-name{
-        width: 60%;
+        width: 100%;
     }
     .my-name h2 {
        font-size: 1rem;
