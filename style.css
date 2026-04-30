@@ -252,7 +252,7 @@ header {
 }
 .experience{
     display: flex;
-    background-color: antiquewhite;
+    background-color: rgb(240, 240, 240);
     min-height: 100vh;
     width: 100vw;
     padding: 20px;
@@ -329,7 +329,7 @@ header {
 .left .first div:first-child{
     display: flex;
     height:40%;
-    border:1px solid black;
+    border:0px solid black;
     justify-content: space-between;
 }
 .left .first div:nth-of-type(2){
@@ -341,7 +341,7 @@ header {
     display: flex;
     justify-content: space-between;
     height:40%;
-    border:1px solid black;
+    border:0px solid black;
 }
 .left .third div:nth-of-type(2){
     height:60%;
@@ -351,10 +351,28 @@ header {
     display: flex;
     justify-content: space-between;
     height:40%;
-    border:1px solid black;
+    border:0px solid black;
 }
 .right .second div:nth-of-type(2){
     
     height:60%;
     border:1px solid black;
+}
+.left .first div:first-child div:first-child{
+    background-image: url(./image/ninjasicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.left .third div:first-child div:first-child{
+    background-image: url(./image/ninjasicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.right .second div:first-child div:first-child{
+    background-image: url(./image/ninjasicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
