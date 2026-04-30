@@ -104,3 +104,8 @@ header {
     background-repeat: no-repeat;
     background-position: center;
 }
+@media (max-width:768px){
+    .my-name h2 {
+       font-size: 1.5rem;
+    }
+}
