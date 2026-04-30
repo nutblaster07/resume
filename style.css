@@ -250,3 +250,111 @@ header {
         font-size: 1.5rem;
     }
 }
+.experience{
+    display: flex;
+    background-color: antiquewhite;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    color: #0410b2;
+    text-align: center;
+    flex-direction: column;
+    
+}
+.experience .container{
+    height: 100vh;
+    border: 0px solid black;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+}
+.experience .container .left{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 45%;
+    border: 0px solid black;
+    margin-left: 0px;
+}
+.experience .container .middle{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 10%;
+    border: 1px solid black;
+    margin-left: 0px;
+}
+.experience .container .right{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 45%;
+    border: 0px solid black;
+    margin-left: 0px;
+}
+.left .first{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    height: 40%;
+    width: 100%;
+}
+.left .second{
+    border: 0px solid black;
+    height: 20%;
+    width: 100%;
+}
+.left .third{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    height: 40%;
+    width: 100%;
+}
+.right .first{
+    border: 0px solid black;
+    height: 30%;
+    width: 100%;
+}
+.right .second{
+    border: 0px solid black;
+    height: 40%;
+    width: 100%;
+}
+.right .third{
+    border: 0px solid black;
+    height: 30%;
+    width: 100%;
+}
+.left .first div:first-child{
+    display: flex;
+    height:40%;
+    border:1px solid black;
+    justify-content: space-between;
+}
+.left .first div:nth-of-type(2){
+    
+    height:60%;
+    border:1px solid black;
+}
+.left .third div:first-child{
+    display: flex;
+    justify-content: space-between;
+    height:40%;
+    border:1px solid black;
+}
+.left .third div:nth-of-type(2){
+    height:60%;
+    border:1px solid black;
+}
+.right .second div:first-child{
+    display: flex;
+    justify-content: space-between;
+    height:40%;
+    border:1px solid black;
+}
+.right .second div:nth-of-type(2){
+    
+    height:60%;
+    border:1px solid black;
+}
