@@ -14,7 +14,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
 }
@@ -144,5 +144,112 @@ header {
     .profile-pic {
         width: 90px;
         height: 90px;
+    }
+}
+.about{
+    width: 80%;
+    text-align: justify;
+    justify-self: center;
+    margin-top: 2rem;
+}
+.about p span{
+    color: orangered;
+    font-weight: 600;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    background-color: #b9b8b84a;
+    align-items: center;
+    padding: 20px;
+}
+.skills div h4{
+    color: rgb(9, 9, 132);
+    font-size: 2rem;
+}
+.progress{
+    display: flex;
+    height: 45vh;
+    width: 80%;
+    justify-content: space-around;
+    border: 0px solid black;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    
+    
+}
+.progressbar{
+    display: flex;
+    width: 20%;
+    height: 15%;
+    border: 0px solid black;
+    justify-content: left;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #afaeae;
+    margin: 40px;
+    
+}
+.pr{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    border: 0px solid black;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgb(32, 32, 172);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    
+}
+.progressbar2{
+     width: 80%;
+    height: 100%;
+    border: 0px solid black;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgb(62, 172, 32);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.progressbar3{
+     width: 50%;
+    height: 100%;
+    border: 0px solid black;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgb(172, 32, 32);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.progressbar4{
+     width: 50%;
+    height: 100%;
+    border: 0px solid black;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgba(214, 48, 48, 0.728);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+.progressbar5{
+     width: 50%;
+    height: 100%;
+    border: 0px solid black;
+    border-radius: 15px 0px 0px 15px;
+    background-color: rgb(172, 135, 32);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+@media (max-width:768px){
+    .progress{
+        height: 60vh;
+    }
+    .progressbar{
+        width: 30%;
+        
     }
 }
