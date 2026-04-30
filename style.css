@@ -1,119 +1,148 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-html, body{
+
+html, body {
     overflow-x: hidden;
 }
+
+/* ======= HEADER ======= */
 header {
     background-image: url('./image/macbook_mouse.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 100%;
-    
-}
-.nav{
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     flex-direction: column;
-    border:0px solid black;
-    gap: 2rem;
-    background-image: url('./image/macbook_mouse.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;
-    
-    
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border:0px solid black;
-    width: 70%;
-    text-align: center;
-    justify-content: center;
-}
-.navbar ul {
-    list-style: none;
-    display: flex;        /* ✅ makes links horizontal */
-    gap: 2rem;            /* ✅ spacing between links */
-    margin: 0;
-    padding: 0;
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: #ffffff;
+/* ======= NAVBAR ======= */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);  /* ✅ semi-transparent dark bar */
+    padding: 12px 24px;
+    position: relative;
+    z-index: 100;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.nav-link {
     font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px !important;
     transition: color 0.2s ease;
 }
 
-.navbar ul li a:hover {
-    color: #f0a500;
+.nav-link:hover {
+    color: #f0a500 !important;
 }
 
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
 
+.navbar-toggler:focus {
+    box-shadow: none;           /* ✅ removes Bootstrap blue outline */
+}
 
-.my-name{
+/* ✅ Mobile dropdown styling */
+.navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.92);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    margin-top: 8px;
+    z-index: 999;               /* ✅ floats over hero content */
+}
+
+/* Only apply dark bg on mobile */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        background-color: transparent;  /* ✅ transparent on desktop */
+        margin-top: 0;
+    }
+}
+
+/* ======= HERO CONTENT ======= */
+.hero-content {
+    flex: 1;
     display: flex;
-    width: 30%;
-    font-size: 20px;
-    height: 50px;
-    border:0px solid black;
-    background-color: #00000076;
-    color: #ffffff;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 1;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
 }
 
-.socials{
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    height: 50px;
-    border:0px solid black;
-    margin-bottom: 2rem;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.153);
-}
-.socials a {
-    width: 50px;
-    text-decoration: none;
-    color: black;
-}
-.socials a i{
-    
-}
-
-.profile-pic{
-    width: 100px;
-    height: 100px;
+/* ======= PROFILE PIC ======= */
+.profile-pic {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border:1px solid rgb(79, 76, 76);
-    position: absolute;
-    top: 250px;
-    border-width: 5px;
     background-image: url('./image/p2.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
-@media (max-width:768px){
-   
-    .my-name{
-        width: 60%;
-        background-color: rgba(0, 0, 0, 0.13);
-    }
+
+/* ======= NAME ======= */
+.my-name {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.my-name h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ======= SOCIALS ======= */
+.socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.socials a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+    background: #f0a500;
+    border-color: #f0a500;
+    transform: translateY(-4px);
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
     .my-name h2 {
-       font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .profile-pic {
+        width: 90px;
+        height: 90px;
     }
 }
